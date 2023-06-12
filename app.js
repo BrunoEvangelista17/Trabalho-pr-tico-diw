@@ -28,6 +28,7 @@ function createProductCard(product) {
           <h5 class="card-title">${product.title}</h5>
           <p class="card-text category">${product.category}</p>
           <p class="card-text price">${product.price} USD</p>
+          <a href="details.html?id=${product.id}" class="btn btn-primary">Ver Detalhes</a>
         </div>
       </div>
     </div>
@@ -93,6 +94,5 @@ function renderError() {
     </div>
   `);
 }
-
 renderSkeletons(6);
 displayProducts();
